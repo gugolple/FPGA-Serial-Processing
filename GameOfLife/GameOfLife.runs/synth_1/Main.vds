@@ -1,0 +1,381 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Jul 23 17:41:57 2020
+# Process ID: 817
+# Current directory: /home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/synth_1
+# Command line: vivado -log Main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main.tcl
+# Log file: /home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/synth_1/Main.vds
+# Journal file: /home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Main.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/XilinxIPGugo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/ubuntu/shared/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'Gugo:hls:fir:1.1'. The one found in IP location '/home/ubuntu/XilinxIPGugo/GugoHlsBramDivisor' will take precedence over the same IP in location /home/ubuntu/XilinxIPGugo/GugoHlsBramIncrementor
+Command: synth_design -top Main -part xc7s25csga225-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 839
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2115.832 ; gain = 0.000 ; free physical = 13255 ; free virtual = 14393
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Main' [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd:37]
+	Parameter clk_freq bound to: 12000000 - type: integer 
+	Parameter baud_rate bound to: 9600 - type: integer 
+	Parameter os_rate bound to: 16 - type: integer 
+	Parameter d_width bound to: 8 - type: integer 
+	Parameter parity bound to: 1 - type: integer 
+	Parameter parity_eo bound to: 1'b0 
+INFO: [Synth 8-3491] module 'uart' declared at '/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/UART.vhd:26' bound to instance 'uart1' of component 'UART' [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'uart' [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/UART.vhd:47]
+	Parameter clk_freq bound to: 12000000 - type: integer 
+	Parameter baud_rate bound to: 9600 - type: integer 
+	Parameter os_rate bound to: 16 - type: integer 
+	Parameter d_width bound to: 8 - type: integer 
+	Parameter parity bound to: 1 - type: integer 
+	Parameter parity_eo bound to: 1'b0 
+WARNING: [Synth 8-614] signal 'os_pulse' is read in the process but is not in the sensitivity list [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/UART.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'uart' (1#1) [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/UART.vhd:47]
+INFO: [Synth 8-3491] module 'blk_mem_8x180' declared at '/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/synth_1/.Xil/Vivado-817-xilinx-vivado/realtime/blk_mem_8x180_stub.vhdl:5' bound to instance 'bram1' of component 'blk_mem_8x180' [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_8x180' [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/synth_1/.Xil/Vivado-817-xilinx-vivado/realtime/blk_mem_8x180_stub.vhdl:23]
+INFO: [Synth 8-256] done synthesizing module 'Main' (2#1) [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd:37]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2115.832 ; gain = 0.000 ; free physical = 13289 ; free virtual = 14429
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2115.832 ; gain = 0.000 ; free physical = 13283 ; free virtual = 14424
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2115.832 ; gain = 0.000 ; free physical = 13283 ; free virtual = 14424
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2115.832 ; gain = 0.000 ; free physical = 13275 ; free virtual = 14416
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/ip/blk_mem_8x180/blk_mem_8x180/blk_mem_8x180_in_context.xdc] for cell 'bram1'
+Finished Parsing XDC File [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/ip/blk_mem_8x180/blk_mem_8x180/blk_mem_8x180_in_context.xdc] for cell 'bram1'
+Parsing XDC File [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:3]
+WARNING: [Vivado 12-584] No ports matched 'led0_b'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'led0_g'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'led0_r'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'ja[0]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'ja[1]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'ja[2]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'ja[3]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'ja[4]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'ja[5]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'ja[6]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'ja[7]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'pio1'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'pio2'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'pio3'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'pio4'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'pio5'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'pio6'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'pio7'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'pio8'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'pio9'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'pio16'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'pio17'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'pio18'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'pio19'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'pio20'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'pio21'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'pio22'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'pio23'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'pio26'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'pio27'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'pio28'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'pio29'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'pio30'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'pio31'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'pio40'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'pio41'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'pio42'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'pio43'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'pio44'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'pio45'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'pio46'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'pio47'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'pio48'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'ja[0]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'ja[0]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'ja[0]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'ja[1]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'ja[1]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'ja[1]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'ja[2]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'ja[2]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'ja[2]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'ja[3]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'ja[3]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'ja[3]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'ja[4]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'ja[4]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'ja[4]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'ja[5]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'ja[5]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'ja[5]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'ja[6]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'ja[6]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'ja[6]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'ja[7]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'ja[7]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'ja[7]'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:94]
+WARNING: [Vivado 12-4702] DRIVE is not a supported property on input port(s). Setting is ignored. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:96]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'led0_b'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'led0_b'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'led0_b'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'led0_g'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'led0_g'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'led0_g'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'led0_r'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'led0_r'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'led0_r'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:106]
+WARNING: [Vivado 12-4702] DRIVE is not a supported property on input port(s). Setting is ignored. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:111]
+WARNING: [Vivado 12-4702] SLEW is not a supported property on input port(s). Setting is ignored. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'pio1'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'pio1'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'pio1'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'pio2'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'pio2'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'pio2'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'pio3'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'pio3'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'pio3'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'pio4'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'pio4'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'pio4'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'pio5'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'pio5'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'pio5'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'pio6'. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:128]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc:128]
+Finished Parsing XDC File [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Main_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/constrs_1/imports/XilinxProjects/cmods7_io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2179.828 ; gain = 0.000 ; free physical = 13185 ; free virtual = 14339
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2179.828 ; gain = 0.000 ; free physical = 13185 ; free virtual = 14339
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13243 ; free virtual = 14398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13243 ; free virtual = 14398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for bram1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13245 ; free virtual = 14400
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'estado_reg' in module 'Main'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   reset |                              000 |                              100
+                endreset |                              001 |                              101
+               reception |                              010 |                              000
+         finishreception |                              011 |                              001
+                 compute |                              100 |                              010
+             transmision |                              101 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'estado_reg' using encoding 'sequential' in module 'Main'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13235 ; free virtual = 14391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
++---XORs : 
+	   9 Input      1 Bit         XORs := 1     
+	   8 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 27    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 3     
+	   6 Input    8 Bit        Muxes := 3     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 25    
+	   6 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13215 ; free virtual = 14376
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13089 ; free virtual = 14256
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13089 ; free virtual = 14256
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13087 ; free virtual = 14255
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13086 ; free virtual = 14254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13086 ; free virtual = 14254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13086 ; free virtual = 14254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13086 ; free virtual = 14254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13086 ; free virtual = 14254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13086 ; free virtual = 14254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_8x180 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |blk_mem_8x180_bbox |     1|
+|2     |BUFG               |     1|
+|3     |CARRY4             |    32|
+|4     |LUT1               |     2|
+|5     |LUT2               |    40|
+|6     |LUT3               |    55|
+|7     |LUT4               |    29|
+|8     |LUT5               |    29|
+|9     |LUT6               |    39|
+|10    |FDRE               |   239|
+|11    |FDSE               |     4|
+|12    |IBUF               |     2|
+|13    |OBUF               |     5|
++------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13086 ; free virtual = 14254
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 2179.828 ; gain = 0.000 ; free physical = 13140 ; free virtual = 14308
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13140 ; free virtual = 14308
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2179.828 ; gain = 0.000 ; free physical = 13210 ; free virtual = 14381
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2179.828 ; gain = 0.000 ; free physical = 13156 ; free virtual = 14327
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+28 Infos, 107 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2179.828 ; gain = 64.031 ; free physical = 13294 ; free virtual = 14465
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/synth_1/Main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Main_utilization_synth.rpt -pb Main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 23 17:42:36 2020...

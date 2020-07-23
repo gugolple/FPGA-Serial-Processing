@@ -1,0 +1,6 @@
+0.7
+2020.1
+May 27 2020
+19:59:15
+/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.sim/sim_1/synth/func/xsim/MainSim_func_synth.vhd,1595103650,vhdl,,,,blk_mem_8x180;blk_mem_8x180_blk_mem_gen_generic_cstr;blk_mem_8x180_blk_mem_gen_prim_width;blk_mem_8x180_blk_mem_gen_prim_wrapper;blk_mem_8x180_blk_mem_gen_top;blk_mem_8x180_blk_mem_gen_v8_4_4;blk_mem_8x180_blk_mem_gen_v8_4_4_synth;main;uart,,,,,,,,
+/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd,1594723583,vhdl,,,,mainsim,,,,,,,,

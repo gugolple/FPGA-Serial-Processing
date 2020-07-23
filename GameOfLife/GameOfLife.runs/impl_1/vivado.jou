@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Jul 23 17:42:41 2020
+# Process ID: 1003
+# Current directory: /home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/impl_1
+# Command line: vivado -log Main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Main.tcl -notrace
+# Log file: /home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/impl_1/Main.vdi
+# Journal file: /home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Main.tcl -notrace

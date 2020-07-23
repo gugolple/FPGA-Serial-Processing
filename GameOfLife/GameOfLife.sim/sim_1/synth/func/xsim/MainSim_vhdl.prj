@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"MainSim_func_synth.vhd" \
+"../../../../../GameOfLife.srcs/sim_1/new/MainSim.vhd" \
+
+# Do not sort compile order
+nosort

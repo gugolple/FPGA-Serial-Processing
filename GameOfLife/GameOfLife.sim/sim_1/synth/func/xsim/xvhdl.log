@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.sim/sim_1/synth/func/xsim/MainSim_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'uart'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_8x180_blk_mem_gen_prim_wrapper'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_8x180_blk_mem_gen_prim_width'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_8x180_blk_mem_gen_generic_cstr'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_8x180_blk_mem_gen_top'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_8x180_blk_mem_gen_v8_4_4_synth'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_8x180_blk_mem_gen_v8_4_4'
+INFO: [VRFC 10-3107] analyzing entity 'blk_mem_8x180'
+INFO: [VRFC 10-3107] analyzing entity 'Main'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'MainSim'

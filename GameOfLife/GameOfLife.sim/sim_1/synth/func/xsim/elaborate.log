@@ -1,0 +1,20 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: /home/ubuntu/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/xelab -wto a508880aa4844ed08da4f4974ff1110c --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot MainSim_func_synth xil_defaultlib.MainSim -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3146] binding entity 'uart' does not have generic 'clk_freq' [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd:49]
+ERROR: [VRFC 10-3146] binding entity 'uart' does not have generic 'baud_rate' [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd:50]
+ERROR: [VRFC 10-3146] binding entity 'uart' does not have generic 'os_rate' [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd:51]
+ERROR: [VRFC 10-3146] binding entity 'uart' does not have generic 'd_width' [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd:52]
+ERROR: [VRFC 10-3146] binding entity 'uart' does not have generic 'parity' [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd:53]
+ERROR: [VRFC 10-3146] binding entity 'uart' does not have generic 'parity_eo' [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd:54]
+ERROR: [VRFC 10-718] formal port <clk> does not exist in entity <uart>.  Please compare the definition of block <uart> to its component declaration and its instantion to detect the mismatch. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd:58]
+ERROR: [VRFC 10-718] formal port <reset_n> does not exist in entity <uart>.  Please compare the definition of block <uart> to its component declaration and its instantion to detect the mismatch. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd:59]
+ERROR: [VRFC 10-718] formal port <tx_data> does not exist in entity <uart>.  Please compare the definition of block <uart> to its component declaration and its instantion to detect the mismatch. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd:61]
+ERROR: [VRFC 10-718] formal port <rx> does not exist in entity <uart>.  Please compare the definition of block <uart> to its component declaration and its instantion to detect the mismatch. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd:62]
+ERROR: [VRFC 10-718] formal port <rx_error> does not exist in entity <uart>.  Please compare the definition of block <uart> to its component declaration and its instantion to detect the mismatch. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd:64]
+ERROR: [VRFC 10-718] formal port <rx_data> does not exist in entity <uart>.  Please compare the definition of block <uart> to its component declaration and its instantion to detect the mismatch. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd:65]
+ERROR: [VRFC 10-718] formal port <tx_busy> does not exist in entity <uart>.  Please compare the definition of block <uart> to its component declaration and its instantion to detect the mismatch. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd:66]
+ERROR: [VRFC 10-718] formal port <tx> does not exist in entity <uart>.  Please compare the definition of block <uart> to its component declaration and its instantion to detect the mismatch. [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sim_1/new/MainSim.vhd:67]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit mainsim in library work failed.

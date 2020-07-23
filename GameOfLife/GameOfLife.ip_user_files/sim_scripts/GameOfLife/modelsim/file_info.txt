@@ -1,0 +1,2 @@
+fun.vhd,vhdl,xil_defaultlib,../../../ipstatic/hdl/vhdl/fun.vhd,
+GameOfLife.vhd,vhdl,xil_defaultlib,../../../../GameOfLife.srcs/sources_1/ip/GameOfLife/sim/GameOfLife.vhd,

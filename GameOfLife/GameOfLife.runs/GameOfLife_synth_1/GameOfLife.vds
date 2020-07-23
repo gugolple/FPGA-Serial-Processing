@@ -1,0 +1,238 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Jul 11 13:58:07 2020
+# Process ID: 3513
+# Current directory: /home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/GameOfLife_synth_1
+# Command line: vivado -log GameOfLife.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source GameOfLife.tcl
+# Log file: /home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/GameOfLife_synth_1/GameOfLife.vds
+# Journal file: /home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/GameOfLife_synth_1/vivado.jou
+#-----------------------------------------------------------
+source GameOfLife.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/XilinxIPGugo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/ubuntu/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'Gugo:hls:fir:1.1'. The one found in IP location '/home/ubuntu/XilinxIPGugo/GugoHlsBramDivisor' will take precedence over the same IP in location /home/ubuntu/XilinxIPGugo/GugoHlsBramIncrementor
+Command: synth_design -top GameOfLife -part xc7s25csga225-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3543
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2115.832 ; gain = 0.000 ; free physical = 13217 ; free virtual = 14368
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'GameOfLife' [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/ip/GameOfLife/synth/GameOfLife.vhd:81]
+INFO: [Synth 8-3491] module 'fun' declared at '/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/ip/GameOfLife/hdl/vhdl/fun.vhd:12' bound to instance 'U0' of component 'fun' [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/ip/GameOfLife/synth/GameOfLife.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'fun' [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/ip/GameOfLife/hdl/vhdl/fun.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'fun' (1#1) [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/ip/GameOfLife/hdl/vhdl/fun.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'GameOfLife' (2#1) [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/ip/GameOfLife/synth/GameOfLife.vhd:81]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2115.832 ; gain = 0.000 ; free physical = 13251 ; free virtual = 14404
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2115.832 ; gain = 0.000 ; free physical = 13238 ; free virtual = 14391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2115.832 ; gain = 0.000 ; free physical = 13238 ; free virtual = 14391
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2115.832 ; gain = 0.000 ; free physical = 13224 ; free virtual = 14377
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/ip/GameOfLife/constraints/fun_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/ip/GameOfLife/constraints/fun_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/GameOfLife_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/GameOfLife_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2179.828 ; gain = 0.000 ; free physical = 13131 ; free virtual = 14297
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2179.828 ; gain = 0.000 ; free physical = 13130 ; free virtual = 14296
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13199 ; free virtual = 14365
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13199 ; free virtual = 14366
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/GameOfLife_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13201 ; free virtual = 14368
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13191 ; free virtual = 14359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    8 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 9     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  11 Input   10 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13176 ; free virtual = 14348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13054 ; free virtual = 14233
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13053 ; free virtual = 14232
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13053 ; free virtual = 14232
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13053 ; free virtual = 14232
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13053 ; free virtual = 14232
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13053 ; free virtual = 14232
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13053 ; free virtual = 14232
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13053 ; free virtual = 14232
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13053 ; free virtual = 14232
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT1   |     2|
+|3     |LUT2   |    15|
+|4     |LUT3   |    21|
+|5     |LUT4   |    28|
+|6     |LUT5   |    12|
+|7     |LUT6   |     4|
+|8     |FDRE   |    76|
+|9     |FDSE   |     4|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13053 ; free virtual = 14232
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2179.828 ; gain = 0.000 ; free physical = 13106 ; free virtual = 14285
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 2179.828 ; gain = 63.996 ; free physical = 13106 ; free virtual = 14285
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2179.828 ; gain = 0.000 ; free physical = 13174 ; free virtual = 14356
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2179.828 ; gain = 0.000 ; free physical = 13113 ; free virtual = 14295
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2179.828 ; gain = 64.031 ; free physical = 13254 ; free virtual = 14436
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/GameOfLife_synth_1/GameOfLife.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP GameOfLife, cache-ID = e5e430943e76cf63
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.runs/GameOfLife_synth_1/GameOfLife.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file GameOfLife_utilization_synth.rpt -pb GameOfLife_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 11 13:58:48 2020...

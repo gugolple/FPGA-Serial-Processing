@@ -1,0 +1,31 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+Block Memory Generator module MainSim.main1.bram1.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst  is using a behavioral model for simulation which will not precisely model memory collision behavior.
+Stopped at time : 10 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 273
+Stopped at time : 20 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319
+Stopped at time : 30 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319
+Stopped at time : 40 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319
+Stopped at time : 110 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 282
+Stopped at time : 110 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319
+Stopped at time : 1494560 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 203
+Stopped at time : 1494570 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 289
+blk_mem_gen_v8_4_4 collision detected at time: 2837550000, Instance: MainSim.main1.bram1.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst , A write address: 9, B  read address: 9
+Stopped at time : 2987530 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 324
+Stopped at time : 2987550 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 273
+Stopped at time : 2987560 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319
+Stopped at time : 2987570 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319
+Stopped at time : 2987580 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319
+Stopped at time : 2987590 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319
+Stopped at time : 2987600 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319
+Stopped at time : 2987610 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319
+Stopped at time : 2987620 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319
+Stopped at time : 2987630 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319
+Stopped at time : 2987640 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319
+Stopped at time : 2987650 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 282
+Stopped at time : 2987650 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319
+Stopped at time : 4319560 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 203
+Stopped at time : 4319570 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 289
+blk_mem_gen_v8_4_4 collision detected at time: 5662550000, Instance: MainSim.main1.bram1.inst.\native_mem_module.blk_mem_gen_v8_4_4_inst , A write address: 9, B  read address: 9
+Stopped at time : 5812530 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 324
+Stopped at time : 5812550 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 273
+Stopped at time : 5812560 ns : File "/home/ubuntu/XilinxProjects/GameOfLife/GameOfLife.srcs/sources_1/new/Main.vhd" Line 319

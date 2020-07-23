@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../GameOfLife.ip_user_files/ipstatic/hdl/vhdl/fun.vhd" \
+"../../../../GameOfLife.srcs/sources_1/ip/GameOfLife/sim/GameOfLife.vhd" \
+"../../../../GameOfLife.srcs/sources_1/ip/ila_0/sim/ila_0.vhd" \
+"../../../../GameOfLife.srcs/sources_1/new/UART.vhd" \
+"../../../../GameOfLife.srcs/sources_1/new/Main.vhd" \
+"../../../../GameOfLife.srcs/sim_1/new/MainSim.vhd" \
+
+# Do not sort compile order
+nosort
